@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <style>
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15px;
+    padding: 5px;
+    background-color: black;
+}
+.links{
+    border-radius: 15px;
+    width: 30px;
+}
+.link{
+    border-radius: 9px;
+    width: 30px;
+}
+h1{
+    text-align: center;
+}
+.ax{
+    color: white;
+    font-size:40px;
+}
+.lis{
+    border-radius: 10px;
+}
+.nav1{
+    width: 100%;
+    padding: 5px;
+    background-color: #8A0886;
+    color:#222;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif,;
+    position: absolute;
+    top: 59px;
+    z-index: 20;
+
+}
+.nav1 div{
+    padding: 10px;
+}
+img{
+    width: 20px;
+}
+
+.img1{
+    width:100px;
+    margin-left: 30px;
+}
+
+.nav2{
+    width: 100%;
+    padding: 5px;
+    color:#222;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffd905;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+    
+}
+
+a{
+    margin-right:20px ;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 9px;
+}
+
+a:hover{
+    background-color: #8A0886;
+    color: white;
+}
+
+
+.imag{
+    width: 100%;
+}
+
+.img{
+    position: relative;
+}
+
+.imgper{
+    width: 250px;
+    position:absolute;
+    top:170px;
+    left: 300px;
+    border-radius: 11px;
+
+}
+
+.parr{
+    text-align: center;
+    background-color: #ffd905;
+}
+.text, .parr{
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    top: 460px;
+    left: 800px;
+    font-size: 20px;
+}
+
+.porta{
+    padding: 10px;
+}
+
+.cont2{
+    background-color: #8A0886;
+    width: 100%;  
+    display: flex;
+    padding: 200px;
+    flex-direction: row;
+    gap: 200px;
+    justify-content: center;
+
+}
+
+.imgp{
+    width: 250px;
+    border-radius: 9px;
+}
+
+.sob{
+    position: relative;
+}
+
+.sob{
+    position: absolute;
+    top: 970px;
+    left: 610px;
+}
+
+p{
+    
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.dis{
+    padding: 20px;
+}
+
+.cont3{
+    width: 100%;
+    background-color:#8A0886 ;
+    padding: 270px;
+}
+
+ul li{
+    padding: 10px;
+}
+
+ul{
+    background-color: #ffd905;
+}
+
+.gustos{
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+
+.cont4{
+    width: 100%;
+    background-color:#ffd905 ;
+    padding: 200px;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.p{
+    background-color: #ffd905 ;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.titu{
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+
+.subti{
+    padding:15px ;
+}
+
+.title{
+    text-align: center;
+}
+
+.formu{
+    display: flex;
+}
+.formup2,
+.formu .formup2{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.textarea{
+    height: 80px;
+    width: 100%;
+}
+.name{
+    margin-right: 10px;
+}
+.formup2 input, .formu input,.textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.3s ease;
+}
+.formup2 input:focus, .formu input:focus,.textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form .button button{
+  color: #fff;
+  display: block;
+  width: 160px;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background:#8A0886;
+  border: 2px solid #8A0886;
+  margin-top: 20px;
+}
+form .button button:hover{
+  color: #8A0886;
+  background: none;
+}
+
+.name, .email{
+    margin-bottom:10px;
+    height: 30px;
+}
+    </style>
+</head>
+<body>
+    <div class="Contenedor1">
+        <nav class="nav1">
+            <div class="ax">AXA´S</div>
+            <div>
+                <a href="https://www.facebook.com/axanahomy.sierraflores/" target="_blank"><img src="imagenes/face.jpg" class="links"></a>
+                <a href="https://www.instagram.com/axa_sierra/" target="_blank"><img src="imagenes/insta.jpg" class="link"></a>
+                
+            </div>
+        </nav>
+        <nav class="nav2">
+            <div>
+            <img src="imagenes/BTS.png" class="img1"> 
+            </div>
+            <div class="row">
+                <a href="#inicio">Inicio</a>
+                <a href="#quién soy">¿Quién Soy?</a>
+                <a href="#gustos">Gustos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+        <div class="img" id="inicio">
+            <img src="imagenes/R.jpg" class="imag">
+            <img src="imagenes/img1.jpeg" class="imgper">
+        </div>
+        <div class="text">
+            <h2>Hola! me presento soy</h2>
+            <h1>Axa Sierra</h1>
+            <h3 class="porta"> He aquí mi Portafolio Personal.</h3>
+        </div>
+    </div>
+    <h1 class="sob">¿Quién soy?</h1>
+    <div class="cont2" id="quién soy">
+        <div class="dis">
+            <img src="imagenes/img2.jpg" class="imgp"><br>
+            <p class="parr">Soy una persona callada que habla sólo cuando entra en confianza, puedo decir que 
+                en los últimos años me he vuelto un poco introvertida y el tener muchas personas a mi alrededor
+                me incomoda mucho.
+            </p>
+        </div>
+        <div class="dis">
+            <img src="imagenes/img3.jpeg" class="imgp"><br>
+            <p class="parr">Mido 1.63cm, peso apróximadamente 64kg, mi cabello es castaño ocsuro, mis ojos café 
+                oscuro y mi piel un poco oscura, tengo miopía por ello el uso diario de los lentes.
+            </p>
+        </div>
+        <div class="dis">
+            <img src="imagenes/img4.jpeg" class="imgp"><br>
+            <p class="parr">Puedo decir que soy amante de la naturaleza a tal punto de que me llaman ambientalista.
+                amo tomarle fotos a los atardeceres o la naturaleza en general, disfruto las cosas sencillas como acariciar
+                a mi gato, sentarme a analizar el movimiento de las cosas, me gusta escuchar música siempre, amo ver series 
+                asiáticas y todo lo que tenga que ver con Asia llega a captar mi total atención.
+            </p>
+        </div>
+    </div>
+    <div class="cont3" id="gustos">
+       <h1 class="gustos">Gustos</h1>
+       <p>Aunque no parezca soy una persona amante de lo que hace:
+        <ul class="lis">
+            <li>La gastronomía es mi fuerte, amo la cocina y sus derivados.</li>
+            <li>Escucho K-pop, rock no pesado, pop bueno de todo un poco y me hace sentir feliz.</li>
+            <li>Plantar cosas en el jardín de mi abuela y mantenerlo limpio es uno de mis pasatiempos más relajantes.</li>
+            <li>Me gusta mucho el caminar a lugares lejanos ya que me concentro en lo que me rodea.</li>
+        </ul>
+       </p> 
+    </div>
+
+    <div class="cont4" id="contacto">
+        <section class="contact">
+                <h2 class="title">Contacto</h2>
+                <div class="contenedor">
+                    <div class="izquierda">
+                        <div class="titu">Información</div>
+                        <p class="p">Si gustas saber más al respecto no dudes en contactarme</p>
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="titu">Nombre</div>
+                                    <div class="subti">Axa Sierra</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info">
+                                    <div class="titu">Dirección</div>
+                                    <div class="subti">Comayagua, Honduras</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="titu">Email</div>
+                                    <div class="subti">nahomychimy13@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fab fa-whatsapp"></i>
+                                <div class="info">
+                                    <div class="titu">Teléfono</div>
+                                    <div class="subti"><a href="https://api.whatsapp.com/send?phone=50496074097&text=Si quieres saber más de mi contáctame." target="_blank">(+504) 9607-4097</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="derecha">
+                        <div class="titu">Mensaje</div>
+                            <form>
+                                <div class="formu">
+                                    <div class="name">
+                                        <input type="text" placeholder="Nombre" id="nombre" required>
+                                    </div>
+                                    <div class="email">
+                                        <input type="email" id="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="formup2">
+                                    <input type="text" id="asunto" placeholder="Asunto" required>
+                                </div>
+                                <div class="textarea">
+                                    <textarea cols="30" rows="10" id="mensaje" placeholder="Mensaje.." required></textarea>
+                                </div>
+                                <div class="button">
+                                    <button type="submit">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+</body>
+</html>
